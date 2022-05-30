@@ -168,3 +168,18 @@ fdisk -s /dev/sda
 
 For example : 
 ![Screenshot from 2022-05-30 17-34-43](https://user-images.githubusercontent.com/63574039/170974629-3cc4b6ae-bc0b-447e-9b29-eb6eefa6a97c.png)
+
+
+## The `free` command
+
+The `free` command in Linux/Unix is used to show memory (RAM/SWAP) information.
+
+### Usage
+
+### Show memory usage
+
+**Action:**
+--- Output the memory usage - available and used, as well as swap
+
+**Details:**
+--- Outputted values are not human-readable (are in bytes)
