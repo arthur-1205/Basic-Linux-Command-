@@ -42,4 +42,6 @@ df [OPTION]... [FILE]...
 **Command:**
 ```
 df
+```
+
 ![image](https://user-images.githubusercontent.com/63574039/170960326-04e04216-7633-4ea6-828a-c04251537d11.png)
