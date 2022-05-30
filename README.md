@@ -6,7 +6,7 @@
 
 - df/du command
 
-- Add more integrations
+- fdisk command
 
 ## df/du command
 ## - df command
@@ -116,4 +116,30 @@ du {PATH_TO_DIRECTORY}
 ![Screenshot from 2022-05-30 17-09-53](https://user-images.githubusercontent.com/63574039/170970383-96791edd-88c7-400d-b2bb-174d9a05caf5.png)
 
 
+## fdisk command to view the partitions
+The `fdisk` command is used for controlling the disk partition table and making changes to it and this is a list of some of options provided by it : </b>
+- Organize space for new drives.
+- Modify old drives.
+- Create space for new partitions.
+- Move data to new partitions.
+
+### Examples:
+
+1. To view basic details about all available partitions on a particular disk:
+
+```
+fdisk -l particular_disk
+```
+![Screenshot from 2022-05-30 17-19-18](https://user-images.githubusercontent.com/63574039/170972539-33090812-77cc-4188-a91c-c0b19ae8fa11.png)
+
+
+
+2. To show the size of the partition:
+
+```
+fdisk -s /dev/sda
+```
+
+
+![Screenshot from 2022-05-30 17-25-14](https://user-images.githubusercontent.com/63574039/170973004-80da002d-2df8-484c-9ff5-ff73d8a7ac8b.png)
 
