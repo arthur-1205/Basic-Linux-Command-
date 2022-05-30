@@ -10,6 +10,8 @@
 
 - lscpu 
 
+- free/vmstat
+
 ## `df/du` command
 ## - `df` command
 
@@ -118,7 +120,7 @@ du {PATH_TO_DIRECTORY}
 ![Screenshot from 2022-05-30 17-09-53](https://user-images.githubusercontent.com/63574039/170970383-96791edd-88c7-400d-b2bb-174d9a05caf5.png)
 
 
-## fdisk command to view the partitions
+## `fdisk` command to view the partitions
 The `fdisk` command is used for controlling the disk partition table and making changes to it and this is a list of some of options provided by it : </b>
 - Organize space for new drives.
 - Modify old drives.
@@ -170,11 +172,10 @@ For example :
 ![Screenshot from 2022-05-30 17-34-43](https://user-images.githubusercontent.com/63574039/170974629-3cc4b6ae-bc0b-447e-9b29-eb6eefa6a97c.png)
 
 
-## The `free` command
+
+## - The `free` command
 
 The `free` command in Linux/Unix is used to show memory (RAM/SWAP) information.
-
-### Usage
 
 ### Show memory usage
 
@@ -183,3 +184,40 @@ The `free` command in Linux/Unix is used to show memory (RAM/SWAP) information.
 
 **Details:**
 --- Outputted values are not human-readable (are in bytes)
+
+
+### Examples:
+1. Show memory usage in human-readable form
+```
+free -h 
+```
+![Screenshot from 2022-05-30 21-58-22](https://user-images.githubusercontent.com/63574039/171018831-1d5645bc-5f81-4a3e-b159-a08ea3acc8db.png)
+
+2. Show memory usage in MB
+```
+free -m
+```
+
+![Screenshot from 2022-05-30 22-01-45](https://user-images.githubusercontent.com/63574039/171019033-c0652096-0a70-4a0c-8fd7-46a632510d7b.png)
+
+## - `vmstat` command
+The `vmstat` command lets you monitor the performance of your system. It shows you information about your memory, disk, processes,
+CPU scheduling, paging, and block IO. This command is also referred to as **virtual memory statistic report**.
+
+### Examples:
+
+```
+vmstat -a
+```
+If we run `vmstat -a`, it will show us the active and inactive memory of the system running.
+
+![Screenshot from 2022-05-30 22-25-23](https://user-images.githubusercontent.com/63574039/171023021-67e0fb5a-c18e-4854-96ae-54017adafc93.png)
+
+
+
+```
+vmstat
+```
+![Screenshot from 2022-05-30 22-30-31](https://user-images.githubusercontent.com/63574039/171023907-efd2f98b-04e7-417f-90b7-0ea0f796a8df.png)
+
+As you can see it is a pretty useful little command. The most important things that we see above are the `free`, which shows us the free space that is not being used, `si` shows us how much memory is swapped in every second in kB, and `so` shows how much memory is swapped out each second in kB as well.
