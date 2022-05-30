@@ -4,12 +4,14 @@
 
 ## Roadmap
 
-- df/du command
+- df/du 
 
-- fdisk command
+- fdisk
 
-## df/du command
-## - df command
+- lscpu 
+
+## `df/du` command
+## - `df` command
 
 The `df` command in Linux/Unix is used to display information related to file systems about total space and available space.
 `df` is an abbreviation for "disk free".
@@ -75,7 +77,7 @@ df -hT file_system_name
 ![image](https://user-images.githubusercontent.com/63574039/170967260-b2f674ba-8558-40d6-8409-16b3b94ccbfd.png)
 
 
-## - du command
+## - `du` command
 The `du` command, which is short for `disk usage` lets you retrieve information about disk space usage information in a specified directory. In order to customize the output according to the information you need, this command can be paired with the appropriate options or flags.
 
 ### Syntax:
@@ -142,3 +144,27 @@ fdisk -s /dev/sda
 
 ![Screenshot from 2022-05-30 17-25-14](https://user-images.githubusercontent.com/63574039/170973004-80da002d-2df8-484c-9ff5-ff73d8a7ac8b.png)
 
+
+## - `lscpu` command
+
+`lscpu` in Linux/Unix is used to display CPU Architecture info. `lscpu` gathers CPU architecture information from `sysfs` and `/proc/cpuinfo` files.
+
+### Options
+
+`-a, --all`
+    Include lines for online and offline CPUs in the output (default for -e). This option may only specified together with option -e or -p. 
+    For example: `lsof -a`
+
+`-b, --online`
+    Limit the output to online CPUs (default for -p). This option may only be specified together with option -e or -p. 
+    For example: `lscpu -b`
+
+`-c, --offline`
+    Limit the output to offline CPUs. This option may only be specified together with option -e or -p. 
+
+`-e, --extended [=list]`
+    Display the CPU information in human readable format.
+    For example: `lsof -e`
+
+For example : 
+![Screenshot from 2022-05-30 17-34-43](https://user-images.githubusercontent.com/63574039/170974629-3cc4b6ae-bc0b-447e-9b29-eb6eefa6a97c.png)
