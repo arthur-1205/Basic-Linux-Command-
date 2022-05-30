@@ -78,20 +78,6 @@ df -hT file_system_name
 ## - du command
 The `du` command, which is short for `disk usage` lets you retrieve information about disk space usage information in a specified directory. In order to customize the output according to the information you need, this command can be paired with the appropriate options or flags.
 
-### Examples:
-
-1. To show the estimated size of sub-directories in the current directory:
-
-```
-du
-```
-
-2. To show the estimated size of sub-directories inside a specified directory:
-
-```
-du {PATH_TO_DIRECTORY}
-```
-
 ### Syntax:
 
 ```
@@ -109,3 +95,25 @@ du [OPTION]... [FILE]...
 |`-d`|`--max-depth=N`|Provides information up to `N` levels from the directory where the command was executed|
 |`-h`|`--human-readable`|Displays file size in human-readable units, not in bytes|
 |`-s`|`--summarize`|Display only the total filesize instead of a list of files/directories|
+
+
+### Examples:
+
+1. To show the estimated size of sub-directories in the a directory 
+
+```
+du -h 
+```
+
+![Screenshot from 2022-05-30 17-06-20](https://user-images.githubusercontent.com/63574039/170969759-6b2fd6a9-e679-43d8-a99e-3c8a9e37b55d.png)
+
+
+2. To show the estimated size of sub-directories inside a specified directory:
+
+```
+du {PATH_TO_DIRECTORY}
+```
+![Screenshot from 2022-05-30 17-09-53](https://user-images.githubusercontent.com/63574039/170970383-96791edd-88c7-400d-b2bb-174d9a05caf5.png)
+
+
+
