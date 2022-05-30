@@ -1,6 +1,15 @@
 
+# Basic Linux command - TiDiAy
+
+
+## Roadmap
+
+- df/du command
+
+- Add more integrations
+
 ## df/du command
-## df
+## - df
 
 The `df` command in Linux/Unix is used to display information related to file systems about total space and available space.
 `df` is an abbreviation for "disk free".
