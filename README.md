@@ -134,12 +134,11 @@ fdisk -l particular_disk
 
 
 
-2. To show the size of the partition:
+2. To show the size of the partition /dev/sda
 
 ```
 fdisk -s /dev/sda
 ```
-
 
 ![Screenshot from 2022-05-30 17-25-14](https://user-images.githubusercontent.com/63574039/170973004-80da002d-2df8-484c-9ff5-ff73d8a7ac8b.png)
 
